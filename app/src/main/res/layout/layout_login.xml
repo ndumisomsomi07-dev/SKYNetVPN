@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/main_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="28dp">
+
+        <TextView
+            android:id="@+id/txtLoginHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to SKY Net"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email Address"
+            android:textColor="@android:color/white"
+            android:textColorHint="#AAAAAA"
+            android:backgroundTint="@android:color/white"
+            android:inputType="textEmailAddress"
+            android:visibility="gone"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:textColor="@android:color/white"
+            android:textColorHint="#AAAAAA"
+            android:backgroundTint="@android:color/white"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColor="@android:color/white"
+            android:textColorHint="#AAAAAA"
+            android:backgroundTint="@android:color/white"
+            android:inputType="textPassword"
+            android:layout_marginTop="12dp" />
+
+        <!-- Security Questions (Visible during Registration) -->
+        <LinearLayout
+            android:id="@+id/containerRegisterSecurity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Security Question 1: What was your first pet's name?"
+                android:textColor="#88AAFF"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/etRegAns1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Answer 1"
+                android:textColor="@android:color/white"
+                android:textColorHint="#AAAAAA"
+                android:backgroundTint="@android:color/white"
+                android:inputType="text"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Security Question 2: What city were you born in?"
+                android:textColor="#88AAFF"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/etRegAns2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Answer 2"
+                android:textColor="@android:color/white"
+                android:textColorHint="#AAAAAA"
+                android:backgroundTint="@android:color/white"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Login"
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:id="@+id/btnForgotPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="#FFBB00"
+            android:textSize="12sp"
+            android:layout_marginTop="4dp" />
+
+        <Button
+            android:id="@+id/btnToggleRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Need an account? Register"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="#88AAFF"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/txtAdminHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin Login: Admin / Admin123!"
+            android:textColor="#AAAAAA"
+            android:textSize="12sp"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>

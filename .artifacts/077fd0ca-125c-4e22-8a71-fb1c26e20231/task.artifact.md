@@ -1,0 +1,9 @@
+- [x] Implement Sandbox Payment Flow
+    - [x] Create `layout_payment_selection.xml`
+    - [x] Create `layout_mastercard_form.xml`
+    - [x] Create `layout_paypal_form.xml`
+    - [x] Create `layout_payment_processing.xml`
+    - [x] Update `activitymain.xml` ViewFlipper
+    - [x] Update `MainActivity.kt` with payment logic and navigation
+- [x] Generate Release APK
+- [x] Provide search command and path

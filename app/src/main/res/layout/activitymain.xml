@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewFlipper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background">
+
+    <!-- Screen 0: Login -->
+    <include layout="@layout/layout_login" />
+
+    <!-- Screen 1: Subscription -->
+    <include layout="@layout/layout_subscription" />
+
+    <!-- Screen 2: Server Selection -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Select Server"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/btnUserLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="Logout"
+                android:textSize="11sp" />
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewServers"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnConnect"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Connect"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <!-- Screen 3: Connection Stats -->
+    <include layout="@layout/layout_connection_stats" />
+
+    <!-- Screen 4: Payment Selection -->
+    <include layout="@layout/layout_payment_selection" />
+
+    <!-- Screen 5: MasterCard Form -->
+    <include layout="@layout/layout_mastercard_form" />
+
+    <!-- Screen 6: PayPal Form -->
+    <include layout="@layout/layout_paypal_form" />
+
+    <!-- Screen 7: Payment Processing -->
+    <include layout="@layout/layout_payment_processing" />
+
+    <!-- Screen 8: Admin Dashboard -->
+    <include layout="@layout/layout_admin_dashboard" />
+
+    <!-- Screen 9: Forgot Password / Recovery -->
+    <include layout="@layout/layout_forgot_password" />
+
+</ViewFlipper>

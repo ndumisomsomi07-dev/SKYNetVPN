@@ -1,0 +1,27 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Shield Outline -->
+    <path
+        android:pathData="M54,20 L30,30 L30,55 C30,75 54,88 54,88 C54,88 78,75 78,55 L78,30 L54,20 Z"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="4"
+        android:fillColor="#00FFFFFF" />
+
+    <!-- Net Lines inside shield -->
+    <path
+        android:pathData="M35,40 L73,40 M32,55 L76,55 M38,70 L70,70"
+        android:strokeColor="#40FFFFFF"
+        android:strokeWidth="2" />
+    <path
+        android:pathData="M45,28 L45,82 M54,20 L54,88 M63,28 L63,82"
+        android:strokeColor="#40FFFFFF"
+        android:strokeWidth="2" />
+
+    <!-- Central Cloud/Sky element -->
+    <path
+        android:pathData="M44,45 Q54,35 64,45 Q74,55 64,65 Q54,75 44,65 Q34,55 44,45 Z"
+        android:fillColor="#FFFFFF" />
+</vector>
